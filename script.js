@@ -80,7 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function portfolioItemDetails(portfolioItem) {
-    document.querySelector('.pp-thumbnail img').src = portfolioItem.querySelector('.portfolio__img').src;
+		document.querySelector('.pp-thumbnail img').src = `${portfolioItem.dataset.modal}.jpg`;
+		document.querySelector('.pp-thumbnail source').srcset = `${portfolioItem.dataset.modal}.webp`;
   
     document.querySelector('.pp__header h3').innerHTML = portfolioItem.querySelector('.portfolio-item-title').innerHTML;
   
