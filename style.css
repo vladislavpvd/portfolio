@@ -40,8 +40,8 @@ body {
 }
 
 body.dark {
-  --main-color: #3a4257;
-  --color-link: rgb(173, 173, 173);
+  --main-color: #0e0e18;
+  --color-link: rgb(206, 206, 206);
   --blue-dark: rgb(237, 241, 253);
   --white-alpha-40: rgba(255, 255, 255, .4);
   --white-alpha-25: rgba(255, 255, 255, .25);
@@ -76,6 +76,10 @@ svg path {
 
 a {
   text-decoration: none;
+}
+
+body.dark a {
+  color: var(--color-link);
 }
 
 h1,h2 {
@@ -793,6 +797,10 @@ button {
   cursor: pointer;
 }
 
+.portfolio-popup.open .portfolio__img {
+  cursor: default;
+}
+
 .portfolio-item-title {
   margin-bottom: 8px;
   font-size: 20px;
@@ -890,7 +898,6 @@ button {
 .pp-body .general-info__item a {
   width: 100%;
   text-transform: lowercase;
-  color: var(--main-color);
 }
 
 .page-loader {
